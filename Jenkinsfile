@@ -26,6 +26,14 @@ pipeline {
                 '''
             }
         }
+        stage("testing"){
+            steps{
+                sh '''
+                eche "tareas de testing"
+                '''
+            }
+        }
+        }
         stage('deployar') {
             steps {
                 sh '''
